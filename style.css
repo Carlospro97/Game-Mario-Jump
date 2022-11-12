@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.game-board {
+    width: 90%;
+    height: 500px;
+    border-bottom: 0px solid goldenrod;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: black;
+}
+
+.chargin {
+    position: absolute;
+    bottom: 0;
+    width: 70px;
+   animation: chargin-animation 1.5s infinite linear;
+}
+
+.myoshi {
+    width: 110px;
+    position: absolute;
+    bottom: 0;
+    
+}
+
+.boo {
+    bottom: 290px;
+    width: 45px;
+    position: absolute;
+    right: 50%;
+    animation: boo-animation 3s infinite linear;
+    
+}
+
+.jump {
+    animation: jump 500ms ease-out;
+}
+
+.boo1 {
+    bottom: 250px;
+    width: 45px;
+    position: absolute;
+    right: 50%;
+    animation: boo1-animation 2.5s infinite linear;
+}
+
+.cenario {
+    position: center;
+    width: 102%;
+}
+
+
+@keyframes boo1-animation {
+    from {
+        right: 0px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes chargin-animation {
+    from {
+        right: 0;
+    }
+    
+    to {
+        right: 100%;
+    }
+}
+ 
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+    40% {
+        bottom: 130px;
+    }
+    50% {
+        bottom: 130px;
+    }
+    60% {
+        bottom: 130px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes boo-animation {
+    from {
+        right: 0;
+    }
+    
+    to {
+        right: 100%;
+    }
+}
+ 
